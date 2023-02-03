@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	padding-top: 5em;
+	background: linear-gradient(90deg, rgba(227,34,0,1) 0%, rgba(191,0,200,1) 100%);
+}
+
+.swal2-title {
+  font-size: 3em !important;
+  font-family: 'Great Vibes', cursive;
+}
+
+.cuerpo {
+	background: #f5c2ff;
+	width: 450px;
+	height: 450px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family:'Great Vibes', cursive;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+
+.caja-figura {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.botones {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.botones input {
+	border: 2px solid black;
+	border-radius: 12px;
+	padding: 1em;
+	font-family: "Calibri";
+	font-size: 1rem;
+	font-weight: bold;
+	width: 50px;
+}
+
+figure img {
+	width: 3em;
+	animation: pulse infinite;
+	animation-duration: 1s
+}
+
+#my-canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100000;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+#my-canvas.active {
+	visibility: visible;
+}
+/*josephcode_87 - I am the only one*/
